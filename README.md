@@ -1,6 +1,6 @@
 # 🚀 Semana Imersão Trainee da Diretoria de Projetos – RocketJR
 
-Este repositório contém o projeto desenvolvido durante a Imersão da Diretoria de Projetos da RocketJR, simulando o ciclo completo de um projeto real, desde o levantamento de requisitos com o cliente até a entrega final[cite: 1].
+Este repositório contém o projeto desenvolvido durante a Imersão da Diretoria de Projetos da RocketJR, simulando o ciclo completo de um projeto real, desde o levantamento de requisitos com o cliente até a entrega final.
 
 ---
 

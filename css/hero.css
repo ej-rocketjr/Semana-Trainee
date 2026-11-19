@@ -140,6 +140,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* O primeiro valor (52%) empurra um pouco para a direita, 
+       e o segundo valor (top) mantém o foco vertical no topo */
+    object-position: 52% top; 
+    border-radius: 50%;
 }
 
 /* Faixa Inferior (Sub-hero) */

@@ -21,16 +21,17 @@
 
 .about-image-wrapper {
     position: relative;
-    width: 420px;
-    height: 460px;
+    width: 400px;
+    height: 440px;
 }
 
 .about-photo {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 15px 35px rgba(7, 25, 45, 0.08);
+    border-radius: 12px; /* Deixa as bordas um pouco mais suaves e modernas */
+    /* Sombra mais difusa e elegante que destaca a foto do fundo branco */
+    box-shadow: 0 20px 40px rgba(7, 25, 45, 0.12);
 }
 
 .about-badge-tag {
@@ -50,19 +51,20 @@
 
 .about-badge-card {
     position: absolute;
-    bottom: 40px;
-    right: -20px;
+    bottom: 30px;
+    right: -15px;
     background-color: #07192d;
     color: #ffffff;
-    padding: 18px 14px;
-    border-radius: 6px;
+    padding: 16px 14px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 10px;
     letter-spacing: 0.1em;
     font-weight: 700;
-    box-shadow: 0 10px 25px rgba(7, 25, 45, 0.2);
+    box-shadow: 0 10px 25px rgba(7, 25, 45, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .about-badge-card strong {
@@ -138,28 +140,29 @@
     line-height: 1.4;
 }
 
-/* Botão da Seção Sobre */
+/* Botão da Seção Sobre Destacado */
 .btn-about {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background-color: transparent;
-    color: #07192d;
-    border: 1px solid #cbd5e1;
-    padding: 12px 22px;
+    background-color: #07192d; /* Fundo azul escuro principal (ou use #48a878 para verde) */
+    color: #ffffff;
+    border: none;
+    padding: 14px 26px;
     border-radius: 6px;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(7, 25, 45, 0.15);
 }
 
 .btn-about:hover {
-    background-color: #07192d;
+    background-color: #48a878; /* Fica verde moderno ao passar o mouse */
     color: #ffffff;
-    border-color: #07192d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(72, 168, 120, 0.25);
 }
-
 /* Responsividade para Celulares e Tablets Otimizada */
 @media (max-width: 900px) {
     .about-section {
@@ -169,24 +172,36 @@
     .about-container {
         flex-direction: column;
         text-align: center;
-        gap: 40px;
+        gap: 30px;
+    }
+
+    /* Garante que o texto venha PRIMEIRO no celular */
+    .about-right {
+        order: 1;
+    }
+
+    /* Garante que a foto venha logo ABAIXO do texto no celular */
+    .about-left {
+        order: 2;
+        width: 100%;
+        margin-top: 10px;
     }
 
     .about-title {
-        font-size: 28px; /* Ajusta o título para telas menores */
+        font-size: 28px;
     }
 
     .about-image-wrapper {
         width: 100%;
-        max-width: 280px;
-        height: 320px;
-        margin: 0 auto 20px auto;
+        max-width: 260px;
+        height: 310px;
+        margin: 0 auto;
     }
 
     .about-badge-card {
-        right: 5px;
-        bottom: 20px;
-        padding: 12px 10px;
+        right: 10px;
+        bottom: 15px;
+        padding: 10px 12px;
     }
 
     .about-badge-tag {
@@ -195,7 +210,7 @@
     }
 
     .about-info-grid {
-        grid-template-columns: 1fr; /* Empilha as informações no celular */
+        grid-template-columns: 1fr;
         gap: 16px;
         text-align: center;
     }

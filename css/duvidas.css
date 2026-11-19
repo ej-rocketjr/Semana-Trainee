@@ -1,0 +1,130 @@
+/* ===== SEÇÃO DÚVIDAS / FAQ ===== */
+.faq-section {
+    background-color: #f8fafc;
+    padding: 90px 24px;
+    font-family: var(--font-primary, 'Inter', sans-serif);
+    border-top: 1px solid #e2e8f0;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faq-subtitle {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #48a878;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+.faq-title {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.15;
+    color: #07192d;
+    margin: 0 0 12px 0;
+    letter-spacing: -0.02em;
+}
+
+.faq-title em {
+    font-style: italic;
+    font-weight: 400;
+    color: #07192d;
+}
+
+.faq-description {
+    font-size: 15px;
+    color: #5c6b7a;
+    margin: 0;
+}
+
+/* Lista de Perguntas (Acordeão) */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq-item {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.2s ease;
+}
+
+.faq-item:hover {
+    border-color: #94a3b8;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 20px 24px;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #07192d;
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-icon {
+    font-size: 20px;
+    font-weight: 600;
+    color: #5c6b7a;
+    transition: transform 0.2s ease;
+}
+
+/* Estado Fechado da Resposta */
+.faq-answer {
+    padding: 0 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #5c6b7a;
+}
+
+/* Estado Aberto (.active) */
+.faq-item.active .faq-answer {
+    max-height: 250px; /* Altura suficiente para acomodar o texto */
+    padding: 0 24px 20px 24px;
+}
+
+/* Responsividade Mobile Otimizada */
+@media (max-width: 900px) {
+    .faq-section {
+        padding: 60px 16px;
+    }
+
+    .faq-title {
+        font-size: 28px; /* Reduz o título para caber perfeitamente no celular */
+    }
+
+    .faq-question {
+        padding: 16px 18px;
+        font-size: 15px; /* Ajusta o tamanho da pergunta no mobile */
+    }
+
+    .faq-answer {
+        font-size: 13.5px;
+    }
+
+    .faq-item.active .faq-answer {
+        padding: 0 18px 16px 18px;
+    }
+}

@@ -1,12 +1,11 @@
-
 :root {
   --honey: #f0a830;
   --orange: #f07818;
   --brown: #5e412f;
   --teal: #78c0a8;
   --sand: #f5e8a6;
-  --cream: #fff9e6;
-  --line: #e6d9a8;
+  --cream: var(--sand);
+  --line: var(--sand);
   --font-title: 'Fredoka', 'Marykate', sans-serif;
   --font-body: 'DM Sans', 'Hangyaboly', sans-serif;
   --pad: clamp(20px, 5.5vw, 80px);
@@ -115,12 +114,12 @@ ul {
 .ph {
   border: 1.5px dashed var(--line);
   border-radius: 16px;
-  background: #f8efd2;
+  background: var(--sand);
   overflow: hidden;
 }
 
 .ph.mint {
-  background: #ecf1e0;
+  background: var(--sand);
 }
 
 .ph img {
@@ -154,11 +153,12 @@ ul {
 }
 
 .logo-text {
-  font-family: var(--font-title);
-  font-weight: 700;
-  font-size: 2.6rem;
-  line-height: 1;
   margin-right: auto;
+}
+
+.logo-text img {
+  width: 180px;
+  height: auto;
 }
 
 .nav {
@@ -166,7 +166,7 @@ ul {
   gap: 40px;
   font-size: .85rem;
   font-weight: 500;
-  color: #FFF9E9;
+  color: var(--sand);
 }
 
 .nav a:hover {
@@ -176,6 +176,7 @@ ul {
 .hero {
   background: var(--sand);
   overflow: hidden;
+  position: relative;
   padding: clamp(48px, 7vw, 96px) 0;
 }
 
@@ -229,6 +230,7 @@ ul {
 }
 
 .vitrine {
+  background: var(--sand);
   padding: clamp(48px, 6vw, 88px) 0;
 }
 
@@ -256,7 +258,7 @@ ul {
 .pill {
   grid-area: pill;
   background: var(--orange);
-  color: #fff;
+  color: var(--sand);
   font-size: .78rem;
   font-weight: 700;
   padding: 8px 20px;
@@ -293,11 +295,17 @@ ul {
 
 .pedidos .ph {
   background: var(--cream);
-  border: 2px dashed #fff;
+  border: 2px dashed var(--sand);
   aspect-ratio: 8 / 5;
 }
 
+.pedidos .pedido-preview {
+  background: var(--honey);
+  border-color: var(--orange);
+}
+
 .depo {
+  background: var(--sand);
   padding: clamp(48px, 6vw, 88px) 0;
 }
 
@@ -312,6 +320,7 @@ ul {
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 12px;
+  background: var(--honey);
 }
 
 .card .ph {
@@ -321,6 +330,7 @@ ul {
 .card-body {
   min-height: 120px;
   padding: 16px 6px 6px;
+  color: var(--brown);
 }
 
 .faq {
@@ -430,7 +440,7 @@ ul {
 
 .footer li {
   padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 249, 230, .4);
+  border-bottom: 1px solid var(--sand);
   font-size: .85rem;
 }
 
@@ -445,7 +455,7 @@ ul {
   gap: 12px;
   margin-top: 48px;
   padding-block: 22px 30px;
-  border-top: 1px solid rgba(255, 249, 230, .35);
+  border-top: 1px solid var(--sand);
   font-size: .78rem;
 }
 
@@ -502,7 +512,7 @@ ul {
   }
   
   .logo-text {
-    font-size: 2.1rem;
+    width: 150px;
   }
   
   .btn-light {
@@ -589,6 +599,50 @@ ul {
     height: 54px;
   }
 
+  .hero .wrap, .hero-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .hero-copy, .hero-text {
+    display: contents;
+  }
+
+  .hero .tag {
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  .hero-art {
+    position: static;
+    order: 2;
+    width: 140px;
+    margin: 12px 0;
+    margin: 4px 0;
+  }
+
+  .hero .hex {
+    opacity: .35;
+    transform: scale(.7);
+  }
+
+  .hero h1 {
+    order: 3;
+    margin-bottom: 0;
+  }
+  
+  .hero p {
+    order: 4;
+    margin-bottom: 12px;
+  }
+  
+  .hero .cta, .hero .actions {
+    order: 5;
+    width: 100%;
+  }
+
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -600,4 +654,111 @@ ul {
   * {
     transition: none !important;
   }
+
+}
+
+.ph {
+  border: 1.5px dashed var(--line);
+  border-radius: 16px;
+  background: var(--sand);
+  overflow: hidden;
+}
+
+.ph.mint {
+  background: var(--sand);
+}
+
+.ph img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.preview {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.preview .ph {
+  aspect-ratio: 16 / 9;
+}
+
+.preview h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 12px;
+}
+
+.pedido-preview {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  text-align: center;
+}
+
+.pedido-preview img {
+  width: 100%;
+  height: calc(100% - 44px);
+  min-height: 0;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.pedido-preview p {
+  padding: 10px 8px 2px;
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+@media (max-width: 720px) {
+ 
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .faq h2 {
+    font-size: 2.25rem;
+  }
+
+  .tag {
+    font-size: .75rem;
+  }
+
+  .nav {
+    font-size: .78rem;
+  }
+
+  .pill {
+    font-size: .82rem;
+  }
+
+  .pedido-preview p {
+    font-size: 1rem;
+  }
+
+  .footer li {
+    font-size: .9rem;
+  }
+
+}
+
+@media (max-width: 380px) {
+  
+  .hero h1 {
+    font-size: 1.85rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .faq h2 {
+    font-size: 2rem;
+  }
+
 }

@@ -94,14 +94,15 @@
         </section>
 
 
-       <!-- ========================================== -->
+  <!-- ========================================== -->
         <!-- 3. SOBRE (Membro 3) -->
         <!-- ========================================== -->
         <section id="sobre" class="about-section">
             <div class="about-container">
                 
-                <!-- Lado Direito: Textos e Informações (Agora colocado antes no código para vir no topo no mobile) -->
-                <div class="about-right">
+                <!-- Apenas uma coluna principal de texto e elementos organizados em sequência -->
+                <div class="about-content-wrapper" style="display: flex; flex-direction: column; max-width: 800px; margin: 0 auto; text-align: left;">
+                    
                     <span class="about-subtitle">02 / SOBRE O ATENDIMENTO</span>
                     
                     <h2 class="about-title">
@@ -117,7 +118,22 @@
                         Você conversa diretamente com o advogado, em linguagem simples e com respeito à confidencialidade do seu caso. O atendimento é online, de segunda a sexta, das 8h às 17h; o primeiro contato é pelo WhatsApp.
                     </p>
 
-                    <!-- Detalhes em Grid (Atuação, Registro, Horário) -->
+                    <!-- FOTO NO MEIO (Logo após os parágrafos de texto) -->
+                    <div class="about-photo-center" style="display: flex; justify-content: center; margin: 40px 0;">
+                        <div class="about-image-wrapper">
+                            <img src="./assets/Eduardo-Ramos.jpg" alt="Dr. Eduardo Ramos" class="about-photo">
+                            
+                            <div class="about-badge-tag">Atuação desde 2023</div>
+
+                            <div class="about-badge-card">
+                                <span>ESCUTA</span>
+                                <strong>+</strong>
+                                <span>CLAREZA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GRID DE INFORMAÇÕES (Fica abaixo da foto) -->
                     <div class="about-info-grid">
                         <div class="info-item">
                             <span class="info-label">ATUAÇÃO</span>
@@ -133,27 +149,13 @@
                         </div>
                     </div>
 
-                    <!-- Botão de Ação -->
-                    <div class="about-action">
+                    <!-- BOTÃO DESTAQUE POR ÚLTIMO -->
+                    <div class="about-action" style="margin-top: 25px;">
                         <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20meu%20caso." target="_blank" class="btn-about">
                             Fale com o Dr. Eduardo <span>↗</span>
                         </a>
                     </div>
-                </div>
 
-                <!-- Lado Esquerdo: Foto e Detalhes Visuais (Fica abaixo do texto no mobile) -->
-                <div class="about-left">
-                    <div class="about-image-wrapper">
-                        <img src="./assets/Eduardo-Ramos.jpg" alt="Dr. Eduardo Ramos" class="about-photo">
-                        
-                        <div class="about-badge-tag">Atuação desde 2023</div>
-
-                        <div class="about-badge-card">
-                            <span>ESCUTA</span>
-                            <strong>+</strong>
-                            <span>CLAREZA</span>
-                        </div>
-                    </div>
                 </div>
 
             </div>

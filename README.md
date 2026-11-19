@@ -65,7 +65,7 @@ Este projeto seguiu as diretrizes da Diretoria de Projetos da RocketJR:
 
 ## 🌐 Deploy e Como Publicar
 - **Plataforma / Hospedagem:** Hospedagem web com domínio personalizado
-- **Link do deploy:** https://Buykaito.com.br/Beescuit-dev
+- **Link do deploy:** [https://Buykaito.com.br/Beescuit-dev](https://buykaito.com.br/beescuit/)
 - **Como publicar:** Por ser uma aplicação front-end estática (HTML/CSS/Assets), basta enviar os arquivos da branch `main` (`index.html`, pasta `css/` e pasta `assets/`) para o diretório público (`public_html`) do servidor de hospedagem ou conectar a branch `main` diretamente em plataformas como Vercel, Netlify ou GitHub Pages.
 
 ## 🤖 Uso de IA no Desenvolvimento

@@ -312,6 +312,7 @@ ul {
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 12px;
+  background: var(--orange);
 }
 
 .card .ph {
@@ -321,6 +322,7 @@ ul {
 .card-body {
   min-height: 120px;
   padding: 16px 6px 6px;
+  color: var(--cream);
 }
 
 .faq {

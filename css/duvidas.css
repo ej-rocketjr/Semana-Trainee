@@ -104,3 +104,27 @@
     max-height: 250px; /* Altura suficiente para acomodar o texto */
     padding: 0 24px 20px 24px;
 }
+
+/* Responsividade Mobile Otimizada */
+@media (max-width: 900px) {
+    .faq-section {
+        padding: 60px 16px;
+    }
+
+    .faq-title {
+        font-size: 28px; /* Reduz o título para caber perfeitamente no celular */
+    }
+
+    .faq-question {
+        padding: 16px 18px;
+        font-size: 15px; /* Ajusta o tamanho da pergunta no mobile */
+    }
+
+    .faq-answer {
+        font-size: 13.5px;
+    }
+
+    .faq-item.active .faq-answer {
+        padding: 0 18px 16px 18px;
+    }
+}

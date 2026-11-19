@@ -160,32 +160,53 @@
     border-color: #07192d;
 }
 
-/* Responsividade para Celulares */
+/* Responsividade para Celulares e Tablets Otimizada */
 @media (max-width: 900px) {
+    .about-section {
+        padding: 60px 16px;
+    }
+
     .about-container {
         flex-direction: column;
         text-align: center;
+        gap: 40px;
+    }
+
+    .about-title {
+        font-size: 28px; /* Ajusta o título para telas menores */
     }
 
     .about-image-wrapper {
         width: 100%;
-        max-width: 340px;
-        height: 380px;
-        margin-bottom: 30px;
+        max-width: 280px;
+        height: 320px;
+        margin: 0 auto 20px auto;
     }
 
     .about-badge-card {
-        right: 10px;
+        right: 5px;
+        bottom: 20px;
+        padding: 12px 10px;
+    }
+
+    .about-badge-tag {
+        font-size: 11px;
+        padding: 8px 14px;
     }
 
     .about-info-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Empilha as informações no celular */
         gap: 16px;
-        text-align: left;
+        text-align: center;
     }
 
     .about-action {
         display: flex;
+        justify-content: center;
+    }
+
+    .btn-about {
+        width: 100%;
         justify-content: center;
     }
 }

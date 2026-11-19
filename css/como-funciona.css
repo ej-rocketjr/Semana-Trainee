@@ -1,7 +1,7 @@
 /* ===== SEÇÃO COMO FUNCIONA ===== */
 .steps-section {
     background-color: #ffffff;
-    padding: 100px 24px;
+    padding: 90px 24px;
     font-family: var(--font-primary, 'Inter', sans-serif);
 }
 
@@ -89,14 +89,26 @@
     margin: 0;
 }
 
-/* Responsividade para Celulares e Tablets */
+/* Responsividade Mobile Otimizada */
 @media (max-width: 900px) {
+    .steps-section {
+        padding: 60px 16px;
+    }
+
+    .steps-header {
+        margin-bottom: 40px;
+    }
+
     .steps-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
+        grid-template-columns: 1fr; /* Empilha os passos um abaixo do outro no mobile */
+        gap: 30px;
     }
     
     .steps-title {
+        font-size: 28px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .step-number {
         font-size: 32px;
     }
 }

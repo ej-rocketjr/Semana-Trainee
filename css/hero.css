@@ -193,25 +193,47 @@
     text-decoration: underline;
 }
 
-/* Responsividade */
+/* Responsividade Mobile Otimizada */
 @media (max-width: 900px) {
+    .hero {
+        padding: 50px 16px 70px 16px;
+    }
+
     .hero-container {
         flex-direction: column;
         text-align: center;
+        gap: 40px;
+    }
+
+    .hero-title {
+        font-size: 32px; /* Reduz o tamanho no celular para não estourar a tela */
+        line-height: 1.2;
+    }
+
+    .hero-description {
+        font-size: 15px;
     }
 
     .hero-cta-group {
         justify-content: center;
         flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .btn-dark {
+        width: 100%;
+        justify-content: center;
     }
 
     .hero-trust-list {
         justify-content: center;
+        gap: 12px;
     }
 
     .hero-image-wrapper {
-        width: 260px;
-        height: 260px; /* Redimensiona o círculo para celulares */
+        width: 240px;
+        height: 240px; /* Redimensiona o círculo proporcionalmente para celulares */
     }
 
     .bottom-bar-container {

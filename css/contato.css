@@ -2,7 +2,7 @@
 .contact-section {
     background-color: #07192d;
     color: #ffffff;
-    padding: 100px 24px 0 24px;
+    padding: 90px 24px 0 24px;
     font-family: var(--font-primary, 'Inter', sans-serif);
 }
 
@@ -55,6 +55,9 @@
 
 .contact-features {
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .c-feature-item {
@@ -268,27 +271,52 @@
     gap: 10px;
 }
 
-/* Responsividade */
+/* Responsividade Mobile Otimizada */
 @media (max-width: 900px) {
+    .contact-section {
+        padding: 60px 16px 0 16px;
+    }
+
     .contact-container {
         flex-direction: column;
+        gap: 40px;
+        padding-bottom: 50px;
+    }
+
+    .contact-title {
+        font-size: 28px; /* Reduz o tamanho do título no celular */
+    }
+
+    .contact-card {
+        padding: 24px 20px; /* Reduz o preenchimento interno do card do formulário para caber em telas menores */
     }
 
     .contact-form-side {
         max-width: 100%;
     }
 
+    .site-footer {
+        padding: 30px 16px 20px 16px;
+    }
+
     .footer-container {
         flex-direction: column;
         text-align: center;
+        gap: 16px;
+    }
+
+    .footer-brand {
+        justify-content: center;
     }
 
     .footer-links-inline {
         justify-content: center;
+        gap: 16px;
     }
 
     .footer-bottom-bar {
         flex-direction: column;
         text-align: center;
+        gap: 8px;
     }
 }

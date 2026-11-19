@@ -1,7 +1,7 @@
 /* ===== SEÇÃO SERVIÇOS ===== */
 .services-section {
     background-color: #f8fafc; /* Fundo cinza claro corporativo para quebrar a monotonia */
-    padding: 100px 24px;
+    padding: 80px 16px;
     font-family: var(--font-primary, 'Inter', sans-serif);
     border-top: 1px solid #e2e8f0;
     border-bottom: 1px solid #e2e8f0;
@@ -11,8 +11,6 @@
     max-width: 1180px;
     margin: 0 auto;
 }
-
-/* Resto dos estilos da seção de serviços mantêm-se iguais... */
 
 /* Cabeçalho da Seção */
 .services-header {
@@ -159,13 +157,22 @@
     color: #ffffff;
 }
 
-/* Responsividade para Celulares e Tablets */
+/* Responsividade para Celulares e Tablets Otimizada */
 @media (max-width: 900px) {
+    .services-section {
+        padding: 60px 16px;
+    }
+
     .services-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Empilha os 3 cards um abaixo do outro no mobile */
+        gap: 16px;
     }
     
     .services-title {
-        font-size: 32px;
+        font-size: 28px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+
+    .service-card {
+        padding: 24px 20px; /* Reduz o espaçamento interno dos cards no celular */
     }
 }

@@ -91,3 +91,24 @@
     background-color: rgba(255, 255, 255, 0.1);
     border-color: #ffffff;
 }
+
+/* Responsividade Mobile para o Header */
+@media (max-width: 900px) {
+    .header-container {
+        padding: 0 16px;
+    }
+
+    /* Oculta os links de navegação no celular para economizar espaço */
+    .nav-menu {
+        display: none;
+    }
+
+    .btn-header {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .logo-texto span {
+        display: none; /* Oculta a sublinha da logo no celular se faltar espaço */
+    }
+}

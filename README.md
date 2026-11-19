@@ -1,149 +1,92 @@
-# 🚀 Semana Imersão Trainee da Diretoria de Projetos – RocketJR
+# 🐝 Beescuit — Artes em Biscuit Feitas à Mão
 
-Este repositório faz parte das atividades da Semana de Trainee e tem como objetivo avaliar a organização, clareza e capacidade de documentação do projeto, além do desenvolvimento técnico. Contendo o projeto desenvolvido durante a **Imersão da Diretoria de Projetos da RocketJR – Janeiro/2026**.
-
-O objetivo da atividade é simular o ciclo completo de um projeto real, desde o contato inicial com o cliente até a entrega final com deploy, aplicando boas práticas de organização, versionamento, comunicação e desenvolvimento técnico.
-
-## 📌 Orientações
-
-- Cada equipe (ou participante) deve detalhar neste README todas as informações relevantes do projeto.
-- É obrigatório descrever de forma clara:
-- Os requisitos do projeto
-- As tecnologias utilizadas
-- As instruções para execução (se aplicável)
-- Qualquer outra informação que ajude no entendimento do projeto
-
-📝 Observação
-
-Este README faz parte da avaliação técnica e de processo da Imersão.
-
-Um README bem estruturado e explicativo é parte essencial do processo. Clareza, organização e coerência entre requisitos, protótipo e entrega final são critérios fundamentais
-
----
+Landing Page institucional e vitrine digital desenvolvida durante a **Semana Imersão Trainee da Diretoria de Projetos – RocketJR (2026)**.
 
 ## 📌 Sobre o Projeto
+Este projeto consiste no desenvolvimento de uma Landing Page responsiva de página única (*Single Page*) e alta conversão para a **Beescuit**, empreendimento de Penedo/AL especializado na confecção de artefatos artesanais em biscuit (peças decorativas, chaveiros, acessórios, lembrancinhas e artigos personalizados).
 
-> **Descreva aqui, em poucas linhas, o que foi desenvolvido.**  
-> Explique o tipo de solução (ex: Landing Page), o objetivo do projeto e o contexto geral.
-
-**Exemplo:**  
-Este projeto consiste no desenvolvimento de uma Landing Page institucional para um cliente real da RocketJR, com foco em apresentação de serviços e captação de contatos, seguindo os requisitos levantados em reunião com o cliente.
-
+A solução atua como vitrine digital e ponto de venda direto, eliminando intermediários e distrações no atendimento. Por meio dela, o público-alvo pode visualizar o portfólio artesanal, conferir depoimentos reais, tirar dúvidas no FAQ e solicitar orçamentos ou encomendas sob medida diretamente pelo WhatsApp.
 
 ## 👥 Equipe
-
-> Liste os integrantes do grupo. Caso desejem, podem indicar responsabilidades.
-
-- Nome – Função (opcional)
-- Nome – Função
-- Nome – Função
-
+- **Josué Filipe (Felipe)** – Gerente de Projeto (GP): contato com a cliente, acompanhamento de prazos, gestão do quadro Kanban no Trello, controle de atas e gestão de escopo.
+- **João Barbosa** – Designer UI/UX: criação do guia visual, wireframe, protótipo interativo no Figma (desktop e mobile), vitrine de produtos e ajustes de identidade visual.
+- **Ravi Brocco** – Desenvolvedor Principal: arquitetura de código front-end, implementação da responsividade, gerenciamento do fork/commits no GitHub e apoio ao deploy.
+- **João Neto** – Responsável por Documentação e Hospedagem: levantamento de requisitos, redação da documentação, manual do cliente e hospedagem em domínio.
+- **Tainá Lopes** – Responsável por QA: aplicação do checklist de qualidade, testes de responsividade em múltiplos dispositivos, auditoria de links, validação de performance (PageSpeed) e registro de atas.
 
 ## 🎯 Cliente
-
-> Informe quem é o cliente e qual a necessidade principal identificada.
-
-- **Cliente:**  
-- **Objetivo do projeto:**  
-
+- **Cliente:** Aysha – Beescuit (Artesanato em biscuit – Penedo/AL).
+- **Objetivo do projeto:** Estruturar um canal profissional de vendas e vitrine digital para apresentar peças artesanais, orientar pedidos personalizados e converter visitantes em compradores recorrentes com atendimento ágil via WhatsApp.
 
 ## 📋 Levantamento de Requisitos
 
-> Esta seção é **obrigatória**.  
-> Os requisitos **não foram fornecidos pela RocketJR** — eles devem ser levantados, documentados e validados pelo grupo.
-
 ### Requisitos Funcionais
-Descreva as funcionalidades que o sistema deve possuir.
-
-- RF01 –  
-- RF02 –  
+- **RF01 – Atendimento rápido via WhatsApp:** Botão no cabeçalho e botão flutuante direcionando diretamente para o WhatsApp comercial da Beescuit com mensagem pré-preenchida.
+- **RF02 – Canal de pedidos personalizados:** Seção dedicada para solicitação de peças sob medida com redirecionamento direto para atendimento personalizado no WhatsApp.
+- **RF03 – Vitrine responsiva de produtos:** Galeria organizada com fotos reais das peças artesanais produzidas pela marca.
+- **RF04 – Prova social e FAQ:** Seção de feedbacks reais de clientes e acordeão interativo com perguntas frequentes sobre prazos, entrega em Penedo/AL e formas de pagamento.
+- **RF05 – Redes sociais:** Integração e redirecionamento para os perfis oficiais da marca (Instagram e Pinterest).
 
 ### Requisitos Não Funcionais
-Descreva critérios de qualidade, desempenho, usabilidade, responsividade, etc.
-
-- RNF01 –  
-- RNF02 –  
-
-📎 *Os registros formais de validação (ata, mensagens ou confirmação do cliente) devem ser enviados no Classroom.*
-
+- **RNF01 – Responsividade:** Layout 100% responsivo (desenvolvido com abordagem *Mobile First*, otimizado para Desktop, Tablet e Mobile, sem quebra de elementos ou overflow horizontal).
+- **RNF02 – Performance:** Carregamento rápido e leve utilizando HTML5 e CSS3 puros, com imagens otimizadas e meta de pontuação $\ge 90$ no PageSpeed Insights Desktop.
+- **RNF03 – Identidade visual:** Fidelidade à paleta de cores (`--sand`, `--brown`, `--honey`, `--orange`, `--teal`), tipografia (`Fredoka` e `DM Sans`) e logomarca oficial da Beescuit.
+- **RNF04 – Acessibilidade e código limpo:** Uso de HTML5 semântico, atributos `alt` descritivos nas imagens, `aria-label` nos controles e ausência de erros críticos de console.
 
 ## 🎨 Prototipação
-
-> Informe como foi realizada a prototipação e a validação visual do projeto.
-
-- **Ferramenta utilizada:** Figma  
-- **Link do protótipo:**  [INSERIR LINK]
-- **Status:** Aprovado pelo cliente  
-
+A prototipação foi desenvolvida utilizando a abordagem *Mobile First* (contemplando versões desktop e mobile). Após a criação do wireframe e do protótipo de alta fidelidade, foi realizada reunião de alinhamento com a cliente para validar ajustes visuais no cabeçalho, tipografia, esquema de cores e atualização da logomarca.
+- **Ferramenta utilizada:** Figma
+- **Link do protótipo:** [Acessar Protótipo no Figma](https://www.figma.com/design/Bf1JX3IMPw562TkuhbL38z/Beescuit---Landing-Page?node-id=0-1&t=FEZ8iWGTZwoeI4LU-1)
+- **Status:** Aprovado pelo cliente
 
 ## 🛠️ Tecnologias Utilizadas
+- **HTML5 e CSS3** (CSS Grid, Flexbox, variáveis CSS, máscaras SVG e Media Queries)
+- **Figma** (prototipação UI/UX)
+- **Git & GitHub** (versionamento de código, branches e Pull Requests)
+- **Trello** (gestão ágil de tarefas via quadro Kanban)
 
-> Liste as linguagens, frameworks e ferramentas escolhidas.  
-> A escolha tecnológica é livre e será considerada na avaliação conforme complexidade, adequação e organização.
-
-Exemplo:
-- HTML  
-- CSS  
-- Framework / Biblioteca (se aplicável)  
-
+## 💻 Como Rodar o Projeto Localmente
+1. Clone este repositório:
+   ```bash
+   git clone [https://github.com/soaresravi/Beescuit.git](https://github.com/soaresravi/Beescuit.git)
+   ```
+2. Acesse a pasta do projeto:
+   ```bash
+   cd Beescuit
+   ```
+3. Abra o arquivo `index.html` diretamente no navegador de sua preferência (ou utilize a extensão **Live Server** no VS Code).
 
 ## 🔧 Organização e Versionamento
-
 Este projeto seguiu as diretrizes da Diretoria de Projetos da RocketJR:
+- Repositório criado a partir de fork do repositório base (`ej-rocketjr/Semana-Trainee`);
+- Desenvolvimento centralizado na branch `dev` por meio de branches de funcionalidades e Pull Requests internos revisados antes da integração final na `main`;
+- Uso de commits semânticos e bem descritos por todos os membros da equipe;
+- Pull Request final aberto para o repositório oficial ao término da atividade.
 
-- Repositório criado a partir de **fork** do repositório base;
-- Desenvolvimento realizado exclusivamente neste fork;
-- Uso de commits frequentes e bem descritos;
-- Organização clara de pastas e arquivos;
-- Pull Request aberto ao final da atividade.
+## 🌐 Deploy e Como Publicar
+- **Plataforma / Hospedagem:** Hospedagem web com domínio personalizado
+- **Link do deploy:** https://Buykaito.com.br/Beescuit-dev
+- **Como publicar:** Por ser uma aplicação front-end estática (HTML/CSS/Assets), basta enviar os arquivos da branch `main` (`index.html`, pasta `css/` e pasta `assets/`) para o diretório público (`public_html`) do servidor de hospedagem ou conectar a branch `main` diretamente em plataformas como Vercel, Netlify ou GitHub Pages.
 
-
-## 🌐 Deploy
-
-> Informe onde o projeto foi publicado e como pode ser acessado.
-
-- **Plataforma de deploy:**  
-- **Link do deploy:**  
-
-*A escolha da plataforma é livre, desde que o resultado seja funcional, estável e público.*
-
+## 🤖 Uso de IA no Desenvolvimento
+Ferramentas de Inteligência Artificial foram utilizadas de forma auxiliar durante o desenvolvimento para:
+- Revisão de boas práticas de HTML5 semântico e atributos de acessibilidade (`alt` e `aria-label`);
+- Apoio em ajustes finos de responsividade em CSS (reordenação de elementos via Flexbox no mobile e breakpoints);
+- Revisão de código em Pull Requests e estruturação da documentação técnica.
 
 ## 📂 Estrutura do Projeto
-
-> Apresente a estrutura principal do projeto.
-
-```bash
+```text
 /
-├── ...
-```
-
-**Exemplo:**  
-
-```bash
-/
-├── index.html
-├── css/
 ├── assets/
-└── README.md
+│   └── img/          # Logos, fotos dos produtos e feedbacks de clientes
+├── css/
+│   └── style.css     # Estilização global, variáveis e regras responsivas
+├── index.html        # Estrutura principal da Landing Page
+└── README.md         # Documentação do projeto
 ```
-
----
-
-## 📝 Observações Finais
-
-> Após as alterações do README dentro do fork, vocês irão apagar as informações descritividas que serviram de orientação para que fique apenas as informações do projeto.
-
-**Exemplo:**  
-Dentro de "Sobre o Projeto", irão apagar a parte descritiva e deixando a explicação, ficando assim:
-
-
-📌 Sobre o Projeto
-
-Este projeto consiste no desenvolvimento de uma Landing Page institucional para um cliente real da RocketJR, com foco em apresentação de serviços e captação de contatos, seguindo os requisitos levantados em reunião com o cliente.
-
 
 ## 📎 Referências e Materiais de Apoio
 - Guia de Projetos RocketJR
 - Padrões de Commits (Conventional Commits)
 - Material sobre Métodos Ágeis
-- Documentação das tecnologias utilizadas
+- Documentação oficial HTML5 e CSS3 (MDN Web Docs)

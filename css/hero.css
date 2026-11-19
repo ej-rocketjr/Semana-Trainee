@@ -1,0 +1,376 @@
+.hero {
+  background-color: #ffffff;
+  padding: 70px 24px 80px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.hero-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* Coluna Esquerda */
+.hero-left {
+  flex: 1;
+  max-width: 560px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #1e3a5f;
+  margin-bottom: 22px;
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #48a878;
+  border-radius: 50%;
+}
+
+.hero-title {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.12;
+  color: #07192d;
+  letter-spacing: -0.02em;
+  margin: 0 0 24px 0;
+}
+
+.hero-description {
+  font-size: 16px;
+  line-height: 1.65;
+  color: #5c6b7a;
+  margin: 0 0 32px 0;
+}
+
+/* Botões */
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 34px;
+}
+
+.btn-dark {
+  background-color: #07192d;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 26px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-dark:hover {
+  background-color: #102d4d;
+  transform: translateY(-1px);
+}
+
+.btn-link {
+  color: #07192d;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+/* Lista de diferenciais */
+.hero-trust-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  font-size: 13px;
+  color: #5c6b7a;
+  font-weight: 500;
+}
+
+.hero-trust-list li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.check-icon {
+  color: #48a878;
+  font-weight: bold;
+}
+
+/* Coluna Direita (Foto + Anéis + Cards) */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.circle-rings {
+  position: relative;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-rings::before {
+  content: "";
+  position: absolute;
+  width: 410px;
+  height: 410px;
+  border-radius: 50%;
+  border: 1px solid #cbd5e1;
+  pointer-events: none;
+}
+
+.circle-photo-frame {
+  width: 375px;
+  height: 375px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #111111;
+  position: relative;
+  z-index: 1;
+}
+
+.circle-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* Card Branco Inferior Esquerdo */
+.badge-card-white {
+  position: absolute;
+  bottom: 42px;
+  left: -10px;
+  z-index: 2;
+  background-color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 12px 30px rgba(7, 25, 45, 0.12);
+  border: 1px solid #f1f5f9;
+}
+
+.avatar-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #07192d;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-card-text strong {
+  display: block;
+  font-size: 13px;
+  color: #07192d;
+}
+
+.badge-card-text span {
+  display: block;
+  font-size: 11px;
+  color: #64748b;
+}
+
+/* Card Azul Escuro Inferior Direito */
+.quote-card-dark {
+  position: absolute;
+  bottom: 10px;
+  right: -15px;
+  z-index: 3;
+  background-color: #07192d;
+  color: #ffffff;
+  width: 205px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 16px 35px rgba(7, 25, 45, 0.22);
+}
+
+.quote-mark {
+  display: block;
+  font-size: 26px;
+  line-height: 1;
+  color: #48a878;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.quote-card-dark p {
+  font-size: 14px;
+  line-height: 1.45;
+  margin: 0 0 16px 0;
+  font-weight: 500;
+}
+
+.quote-card-dark small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  color: #8fa3b8;
+  font-weight: 600;
+}
+
+/* ===== FAIXA CINZA INFERIOR ===== */
+.hero-bottom-bar {
+  background-color: #f1f5f9;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 28px 24px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.bottom-bar-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.bottom-bar-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #07192d;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+.bottom-bar-text {
+  font-size: 16px;
+  color: #475569;
+  margin: 0;
+  max-width: 540px;
+  line-height: 1.5;
+}
+
+.bottom-bar-link {
+  color: #07192d;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.bottom-bar-link:hover {
+  text-decoration: underline;
+}
+
+/* ===== BOTÃO FLUTUANTE WHATSAPP ===== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  background-color: #25d366;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  z-index: 999;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.08);
+}
+
+/* ===== RESPONSIVIDADE (TABLET E CELULAR) ===== */
+@media (max-width: 960px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 38px;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .hero-trust-list {
+    justify-content: center;
+  }
+
+  .circle-rings {
+    width: 320px;
+    height: 320px;
+  }
+
+  .circle-rings::before {
+    width: 295px;
+    height: 295px;
+  }
+
+  .circle-photo-frame {
+    width: 270px;
+    height: 270px;
+  }
+
+  .badge-card-white {
+    left: 0;
+    bottom: 20px;
+  }
+
+  .quote-card-dark {
+    right: 0;
+    bottom: -15px;
+    width: 175px;
+    padding: 15px;
+    text-align: left;
+  }
+
+  .bottom-bar-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+}

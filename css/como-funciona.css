@@ -1,7 +1,7 @@
 /* ===== SEÇÃO COMO FUNCIONA ===== */
 .steps-section {
     background-color: #ffffff;
-    padding: 90px 24px;
+    padding: 100px 24px;
     font-family: var(--font-primary, 'Inter', sans-serif);
 }
 

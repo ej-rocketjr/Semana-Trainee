@@ -163,7 +163,7 @@
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(72, 168, 120, 0.25);
 }
-/* Responsividade para Celulares e Tablets Otimizada */
+/* Responsividade para Celulares e Tablets */
 @media (max-width: 900px) {
     .about-section {
         padding: 60px 16px;
@@ -175,16 +175,19 @@
         gap: 30px;
     }
 
-    /* Garante que o texto venha PRIMEIRO no celular */
+    /* No celular, os textos ficam em primeiro lugar */
     .about-right {
         order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os textos e botões no mobile */
     }
 
-    /* Garante que a foto venha logo ABAIXO do texto no celular */
+    /* A foto vai para a posição logo abaixo dos parágrafos de texto */
     .about-left {
         order: 2;
         width: 100%;
-        margin-top: 10px;
+        margin: 10px 0;
     }
 
     .about-title {
@@ -213,9 +216,11 @@
         grid-template-columns: 1fr;
         gap: 16px;
         text-align: center;
+        width: 100%;
     }
 
     .about-action {
+        width: 100%;
         display: flex;
         justify-content: center;
     }

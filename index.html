@@ -325,8 +325,112 @@
         <!-- ========================================== -->
         <!-- 6. CONTATO E RODAPÉ (Membro 6) -->
         <!-- ========================================== -->
-        <section id="contato">
-            <!-- Cole o código da seção Contato e Rodapé aqui -->
+        <section id="contato" class="contact-section">
+            <div class="contact-container">
+                
+                <!-- Lado Esquerdo: Textos e Informações de Contato -->
+                <div class="contact-info-side">
+                    <span class="contact-subtitle">06 / PRÓXIMO PASSO</span>
+                    <h2 class="contact-title">
+                        Vamos entender <br>
+                        o que aconteceu <em>com você.</em>
+                    </h2>
+                    <p class="contact-description">
+                        Preencha os dados ou chame diretamente no WhatsApp. Sua situação será avaliada individualmente.
+                    </p>
+
+                    <div class="contact-features">
+                        <div class="c-feature-item">
+                            <div class="c-check-icon">✓</div>
+                            <div>
+                                <strong>Atendimento com discrição</strong>
+                                <span>Seus dados são usados apenas para iniciar o contato.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="contact-meta-list">
+                        <li><span>Atendimento online · segunda a sexta, 8h às 17h</span></li>
+                        <li><span>E-mail: contato@eduardoramos.adv.br</span></li>
+                        <li><span>Instagram: @eduardu.rz</span></li>
+                    </ul>
+                </div>
+
+                <!-- Lado Direito: Card de Formulário (Contato) -->
+                <div class="contact-form-side">
+                    <div class="contact-card">
+                        <h3>Conte seu caso</h3>
+                        <p class="form-subnote">Os campos com * são obrigatórios.</p>
+
+                        <form class="form-wrapper" onsubmit="event.preventDefault();">
+                            <div class="form-group">
+                                <label for="nome">Seu nome *</label>
+                                <input type="text" id="nome" placeholder="Como podemos chamar você?" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="whatsapp">WhatsApp para retorno *</label>
+                                <input type="text" id="whatsapp" placeholder="(82) 9 0000-0000" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="situacao">O que aconteceu?</label>
+                                <select id="situacao">
+                                    <option value="" disabled selected>Selecione uma opção</option>
+                                    <option value="demissao">Fui demitido e não recebi tudo</option>
+                                    <option value="sem-carteira">Trabalhei sem carteira assinada</option>
+                                    <option value="injusta">Fui demitido de forma injusta</option>
+                                    <option value="outro">Outra situação trabalhista</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensagem">Conte resumidamente seu caso</label>
+                                <textarea id="mensagem" rows="3" placeholder="Compartilhe somente o que se sentir confortável"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-submit">
+                                Enviar pelo WhatsApp <span>↗</span>
+                            </button>
+
+                            <p class="form-disclaimer">
+                                Ao continuar, você inicia uma conversa pelo WhatsApp. Evite enviar documentos ou dados sensíveis antes de falar com o advogado.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Rodapé Integrado na Seção -->
+            <footer class="site-footer">
+                <div class="footer-container">
+                    <div class="footer-brand">
+                        <span class="footer-logo-icon">E</span>
+                        <div class="footer-logo-text">
+                            <strong>Eduardo Ramos</strong>
+                            <span>ADVOCACIA TRABALHISTA</span>
+                        </div>
+                    </div>
+
+                    <div class="footer-links-inline">
+                        <span>Atendimento online</span>
+                        <span>OAB: AL nº 18.542</span>
+                        <span>contato@eduardoramos.adv.br</span>
+                        <span>Instagram: @eduardu.rz</span>
+                        <span>WhatsApp: +55 (82) 8729-2456</span>
+                    </div>
+
+                    <div class="footer-top-link">
+                        <a href="#header">Voltar ao topo ↑</a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom-bar">
+                    <p>Este site tem caráter informativo e não garante resultado. Cada caso é analisado individualmente.</p>
+                    <p>© 2026 Dr. Eduardo · Todos os direitos reservados</p>
+                </div>
+            </footer>
         </section>
     </main>
 

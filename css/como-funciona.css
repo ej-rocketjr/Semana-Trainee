@@ -6,14 +6,15 @@
 }
 
 .steps-container {
-    max-width: 1180px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Cabeçalho */
+/* Cabeçalho da Seção */
 .steps-header {
     text-align: center;
-    margin-bottom: 60px;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
 }
 
 .steps-subtitle {
@@ -27,11 +28,11 @@
 }
 
 .steps-title {
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 800;
     line-height: 1.15;
     color: #07192d;
-    margin: 0 0 12px 0;
+    margin: 0 0 16px 0;
     letter-spacing: -0.02em;
 }
 
@@ -45,70 +46,115 @@
     font-size: 15px;
     color: #5c6b7a;
     margin: 0;
+    line-height: 1.6;
 }
 
-/* Grid de Passos */
-.steps-grid {
+/* Grid para 4 Passos no PC */
+.steps-grid.four-steps {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: stretch;
 }
 
+/* Estilo do Card de Passo Padrão (Claro) */
 .step-card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 28px 22px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(7, 25, 45, 0.06);
+    border-color: #cbd5e1;
 }
 
 .step-number {
-    font-size: 38px;
+    font-size: 24px;
     font-weight: 800;
-    color: #1e3a5f;
-    line-height: 1;
-    margin-bottom: 16px;
-    letter-spacing: -0.02em;
+    color: #48a878;
+    margin-bottom: 12px;
 }
 
 .step-line {
-    width: 100%;
-    height: 1px;
-    background-color: #cbd5e1;
-    margin-bottom: 22px;
+    width: 30px;
+    height: 2px;
+    background-color: #07192d;
+    margin-bottom: 16px;
 }
 
 .step-heading {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
     color: #07192d;
     margin: 0 0 10px 0;
+    line-height: 1.3;
 }
 
 .step-text {
-    font-size: 14px;
+    font-size: 13.5px;
     line-height: 1.6;
     color: #5c6b7a;
     margin: 0;
 }
 
-/* Responsividade Mobile Otimizada */
-@media (max-width: 900px) {
+/* ===== ESTILO DOS PASSOS ESCUROS (ALTERNADOS 01 e 03) ===== */
+.step-card.step-dark {
+    background-color: #07192d;
+    border-color: #07192d;
+    box-shadow: 0 10px 30px rgba(7, 25, 45, 0.15);
+}
+
+.step-card.step-dark:hover {
+    border-color: #1e3a5f;
+    box-shadow: 0 16px 35px rgba(7, 25, 45, 0.25);
+}
+
+.step-card.step-dark .step-number.light-num {
+    color: #48a878; /* Mantém o verde de destaque da marca */
+}
+
+.step-card.step-dark .step-line.light-line {
+    background-color: #48a878;
+}
+
+.step-card.step-dark .step-heading.light-heading {
+    color: #ffffff;
+}
+
+.step-card.step-dark .step-text.light-text {
+    color: #94a3b8;
+}
+
+/* ===== RESPONSIVIDADE PARA CELULARES E TABLETS ===== */
+@media (max-width: 1024px) {
+    .steps-grid.four-steps {
+        grid-template-columns: repeat(2, 1fr); /* Em tablets, vira 2x2 */
+        gap: 16px;
+    }
+}
+
+@media (max-width: 650px) {
     .steps-section {
         padding: 60px 16px;
     }
 
-    .steps-header {
-        margin-bottom: 40px;
+    .steps-grid.four-steps {
+        grid-template-columns: 1fr; /* No celular, empilha os 4 cards um abaixo do outro */
+        gap: 16px;
     }
 
-    .steps-grid {
-        grid-template-columns: 1fr; /* Empilha os passos um abaixo do outro no mobile */
-        gap: 30px;
-    }
-    
     .steps-title {
-        font-size: 28px; /* Ajusta o tamanho da fonte para telas menores */
+        font-size: 28px;
     }
 
-    .step-number {
-        font-size: 32px;
+    .step-card {
+        padding: 24px 20px;
     }
 }

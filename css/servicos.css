@@ -1,7 +1,7 @@
-/* ===== SEÇÃO SERVIÇOS ===== */
+/* ===== SEÇÃO SERVIÇOS (ENTENDA SUA SITUAÇÃO) ===== */
 .services-section {
     background-color: #f8fafc; /* Fundo cinza claro corporativo para quebrar a monotonia */
-    padding: 80px 16px;
+    padding: 90px 24px;
     font-family: var(--font-primary, 'Inter', sans-serif);
     border-top: 1px solid #e2e8f0;
     border-bottom: 1px solid #e2e8f0;
@@ -15,7 +15,8 @@
 /* Cabeçalho da Seção */
 .services-header {
     text-align: center;
-    margin-bottom: 50px;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
 }
 
 .services-subtitle {
@@ -29,7 +30,7 @@
 }
 
 .services-title {
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 800;
     line-height: 1.15;
     color: #07192d;
@@ -47,9 +48,10 @@
     font-size: 15px;
     color: #5c6b7a;
     margin: 0;
+    line-height: 1.6;
 }
 
-/* Grid de Cards */
+/* Grid de Cards (3 colunas x múltiplas linhas) */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -61,24 +63,26 @@
 .service-card {
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
-    border-radius: 6px;
-    padding: 36px 30px;
+    border-radius: 8px;
+    padding: 32px 28px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
 }
 
 .service-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 10px 25px rgba(7, 25, 45, 0.06);
+    box-shadow: 0 12px 24px rgba(7, 25, 45, 0.08);
+    border-color: #cbd5e1;
 }
 
 .card-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
 }
 
 .card-icon {
@@ -100,7 +104,7 @@
 }
 
 .card-content h3 {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 700;
     color: #07192d;
     margin: 0 0 12px 0;
@@ -111,9 +115,10 @@
     font-size: 14px;
     line-height: 1.6;
     color: #5c6b7a;
-    margin: 0 0 28px 0;
+    margin: 0 0 24px 0;
 }
 
+/* ===== LINKS EM LINHA ELEGANTES (PADRÃO RESTAURADO) ===== */
 .card-link {
     font-size: 13px;
     font-weight: 700;
@@ -122,21 +127,28 @@
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    transition: gap 0.2s ease;
+    transition: gap 0.2s ease, color 0.2s ease;
 }
 
 .card-link:hover {
     gap: 10px;
+    color: #48a878;
 }
 
-/* Card do Meio (Destaque Escuro) */
+/* Card do Meio e Alternados (Destaque Escuro) */
 .service-card.card-dark {
     background-color: #07192d;
     border-color: #07192d;
+    box-shadow: 0 10px 30px rgba(7, 25, 45, 0.15);
+}
+
+.service-card.card-dark:hover {
+    border-color: #1e3a5f;
+    box-shadow: 0 16px 35px rgba(7, 25, 45, 0.25);
 }
 
 .service-card.card-dark .card-icon.light-icon {
-    border-color: #1e3a5f;
+    border-color: rgba(255, 255, 255, 0.15);
     color: #ffffff;
     background-color: #102d4d;
 }
@@ -153,26 +165,40 @@
     color: #94a3b8;
 }
 
+/* Link nos cards escuros */
 .service-card.card-dark .card-link.light-link {
     color: #ffffff;
 }
 
-/* Responsividade para Celulares e Tablets Otimizada */
+.service-card.card-dark .card-link.light-link:hover {
+    color: #48a878;
+    gap: 10px;
+}
+
+/* ===== RESPONSIVIDADE PARA CELULARES E TABLETS ===== */
 @media (max-width: 900px) {
     .services-section {
         padding: 60px 16px;
     }
 
+    .services-header {
+        margin-bottom: 35px;
+    }
+
     .services-grid {
-        grid-template-columns: 1fr; /* Empilha os 3 cards um abaixo do outro no mobile */
+        grid-template-columns: 1fr; /* Empilha os cards um abaixo do outro no mobile */
         gap: 16px;
     }
     
     .services-title {
-        font-size: 28px; /* Ajusta o tamanho da fonte para telas menores */
+        font-size: 28px; /* Ajusta a proporção do título no celular */
     }
 
     .service-card {
-        padding: 24px 20px; /* Reduz o espaçamento interno dos cards no celular */
+        padding: 24px 20px; /* Espaçamento interno mais compacto para telas pequenas */
+    }
+
+    .card-content h3 {
+        font-size: 18px;
     }
 }

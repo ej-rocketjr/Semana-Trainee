@@ -1,0 +1,182 @@
+/* ===== SEÇÃO CHECKLIST DE DOCUMENTOS ===== */
+.docs-section {
+    background-color: #f8fafc;
+    padding: 90px 24px;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    font-family: var(--font-primary, 'Inter', sans-serif);
+}
+
+.docs-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.docs-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+
+.docs-subtitle {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #48a878;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.docs-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #07192d;
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+
+.docs-title em {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.docs-description {
+    font-size: 15px;
+    color: #5c6b7a;
+    line-height: 1.6;
+}
+
+/* Grid de Cards */
+.docs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+    align-items: stretch;
+}
+
+/* Estilo Base do Card Claro */
+.doc-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 28px 24px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.doc-card:hover {
+    transform: translateY(-4px);
+    border-color: #cbd5e1;
+    box-shadow: 0 12px 24px rgba(7, 25, 45, 0.08);
+}
+
+.doc-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(72, 168, 120, 0.1);
+    color: #48a878;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    border: 1px solid transparent;
+}
+
+.doc-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #07192d;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.doc-card p {
+    font-size: 13.5px;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ===== ESTILO DOS CARDS ESCUROS (ALTERNADOS 01, 03 e 05) ===== */
+.doc-card.doc-card-dark {
+    background-color: #07192d;
+    border-color: #07192d;
+    box-shadow: 0 10px 30px rgba(7, 25, 45, 0.15);
+}
+
+.doc-card.doc-card-dark:hover {
+    border-color: #1e3a5f;
+    box-shadow: 0 16px 35px rgba(7, 25, 45, 0.25);
+}
+
+.doc-card.doc-card-dark .doc-icon.light-icon {
+    background-color: #102d4d;
+    color: #48a878;
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.doc-card.doc-card-dark .light-title {
+    color: #ffffff;
+}
+
+.doc-card.doc-card-dark .light-text {
+    color: #94a3b8;
+}
+
+/* Botão de Ação Centralizado */
+.docs-action {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-docs {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #07192d;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(7, 25, 45, 0.15);
+}
+
+.btn-docs:hover {
+    background-color: #48a878;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(72, 168, 120, 0.25);
+}
+
+/* ===== RESPONSIVIDADE PARA CELULARES E TABLETS ===== */
+@media (max-width: 900px) {
+    .docs-section {
+        padding: 60px 16px;
+    }
+
+    .docs-grid {
+        grid-template-columns: 1fr; /* Empilha os cards no celular */
+        gap: 16px;
+    }
+
+    .docs-title {
+        font-size: 26px;
+    }
+
+    .doc-card {
+        padding: 22px 18px;
+    }
+
+    .btn-docs {
+        width: 100%;
+        justify-content: center;
+    }
+}

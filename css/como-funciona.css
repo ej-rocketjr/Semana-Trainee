@@ -1,0 +1,160 @@
+/* ===== SEÇÃO COMO FUNCIONA ===== */
+.steps-section {
+    background-color: #ffffff;
+    padding: 90px 24px;
+    font-family: var(--font-primary, 'Inter', sans-serif);
+}
+
+.steps-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho da Seção */
+.steps-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+
+.steps-subtitle {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #48a878;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+.steps-title {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.15;
+    color: #07192d;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.02em;
+}
+
+.steps-title em {
+    font-style: italic;
+    font-weight: 400;
+    color: #07192d;
+}
+
+.steps-description {
+    font-size: 15px;
+    color: #5c6b7a;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Grid para 4 Passos no PC */
+.steps-grid.four-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* Estilo do Card de Passo Padrão (Claro) */
+.step-card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 28px 22px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(7, 25, 45, 0.06);
+    border-color: #cbd5e1;
+}
+
+.step-number {
+    font-size: 24px;
+    font-weight: 800;
+    color: #48a878;
+    margin-bottom: 12px;
+}
+
+.step-line {
+    width: 30px;
+    height: 2px;
+    background-color: #07192d;
+    margin-bottom: 16px;
+}
+
+.step-heading {
+    font-size: 17px;
+    font-weight: 700;
+    color: #07192d;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+}
+
+.step-text {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #5c6b7a;
+    margin: 0;
+}
+
+/* ===== ESTILO DOS PASSOS ESCUROS (ALTERNADOS 01 e 03) ===== */
+.step-card.step-dark {
+    background-color: #07192d;
+    border-color: #07192d;
+    box-shadow: 0 10px 30px rgba(7, 25, 45, 0.15);
+}
+
+.step-card.step-dark:hover {
+    border-color: #1e3a5f;
+    box-shadow: 0 16px 35px rgba(7, 25, 45, 0.25);
+}
+
+.step-card.step-dark .step-number.light-num {
+    color: #48a878; /* Mantém o verde de destaque da marca */
+}
+
+.step-card.step-dark .step-line.light-line {
+    background-color: #48a878;
+}
+
+.step-card.step-dark .step-heading.light-heading {
+    color: #ffffff;
+}
+
+.step-card.step-dark .step-text.light-text {
+    color: #94a3b8;
+}
+
+/* ===== RESPONSIVIDADE PARA CELULARES E TABLETS ===== */
+@media (max-width: 1024px) {
+    .steps-grid.four-steps {
+        grid-template-columns: repeat(2, 1fr); /* Em tablets, vira 2x2 */
+        gap: 16px;
+    }
+}
+
+@media (max-width: 650px) {
+    .steps-section {
+        padding: 60px 16px;
+    }
+
+    .steps-grid.four-steps {
+        grid-template-columns: 1fr; /* No celular, empilha os 4 cards um abaixo do outro */
+        gap: 16px;
+    }
+
+    .steps-title {
+        font-size: 28px;
+    }
+
+    .step-card {
+        padding: 24px 20px;
+    }
+}

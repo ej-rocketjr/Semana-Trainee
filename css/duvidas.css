@@ -101,7 +101,7 @@
 
 /* Estado Aberto (.active) */
 .faq-item.active .faq-answer {
-    max-height: 250px; /* Altura suficiente para acomodar o texto */
+    max-height: 500px; /* Folga para textos maiores em telas estreitas */
     padding: 0 24px 20px 24px;
 }
 

@@ -163,7 +163,7 @@
     }
 
     .docs-grid {
-        grid-template-columns: 1fr; /* Empilha os cards no celular */
+        grid-template-columns: repeat(2, 1fr); /* Tablet: 2 colunas */
         gap: 16px;
     }
 
@@ -173,6 +173,14 @@
 
     .doc-card {
         padding: 22px 18px;
+    }
+
+}
+
+/* Celular: uma coluna e botão em largura total */
+@media (max-width: 600px) {
+    .docs-grid {
+        grid-template-columns: 1fr;
     }
 
     .btn-docs {

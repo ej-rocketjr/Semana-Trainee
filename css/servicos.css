@@ -186,7 +186,7 @@
     }
 
     .services-grid {
-        grid-template-columns: 1fr; /* Empilha os cards um abaixo do outro no mobile */
+        grid-template-columns: repeat(2, 1fr); /* Tablet: 2 colunas */
         gap: 16px;
     }
     
@@ -200,5 +200,12 @@
 
     .card-content h3 {
         font-size: 18px;
+    }
+}
+
+/* Celular: uma coluna */
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: 1fr;
     }
 }

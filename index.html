@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Eduardo Ramos - Advocacia Trabalhista</title>
-    
+
+    <!-- SEO e compartilhamento -->
+    <meta name="description" content="Advocacia trabalhista com atendimento online. Conte o que aconteceu e receba uma avaliação individual do seu caso, com conversa clara e sem juridiquês.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dr. Eduardo Ramos - Advocacia Trabalhista">
+    <meta property="og:description" content="Atendimento online para trabalhadores. Primeiro contato pelo WhatsApp.">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Fonte Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
     <!-- CSS Global e das Seções -->
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/header.css">
@@ -33,16 +45,22 @@
             </a>
 
             <!-- Menu de Navegação -->
-            <nav class="nav-menu">
+            <nav class="nav-menu" id="menu-principal" aria-label="Menu principal">
                 <a href="#hero">Início</a>
                 <a href="#sobre">Sobre</a>
                 <a href="#servicos">Serviços</a>
                 <a href="#como-funciona">Como funciona</a>
+                <a href="#duvidas">Dúvidas</a>
                 <a href="#contato">Contato</a>
             </nav>
 
             <!-- Botão CTA com Mensagem Automática -->
-            <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20meu%20caso." target="_blank" class="btn-header">Falar sobre meu caso &#8599;</a>
+            <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20meu%20caso." target="_blank" rel="noopener noreferrer" class="btn-header">Falar sobre meu caso &#8599;</a>
+
+            <!-- Botão do menu (aparece só em telas menores) -->
+            <button type="button" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
     
@@ -69,7 +87,7 @@
                 </p>
 
                 <div class="hero-cta-group">
-                  <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20meu%20caso." target="_blank" class="btn-dark">
+                  <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20meu%20caso." target="_blank" rel="noopener noreferrer" class="btn-dark">
                     Conversar sobre meu caso <span>↗</span>
                   </a>
                   <a href="#como-funciona" class="btn-link">
@@ -104,7 +122,7 @@
                 <!-- Coluna de Textos, Atuação e Botão -->
                 <div class="about-right">
                     <div class="about-header-texts">
-                        <span class="about-subtitle">02 / SOBRE O ATENDIMENTO</span>
+                        <span class="about-subtitle">01 / SOBRE O ATENDIMENTO</span>
                         
                         <h2 class="about-title">
                             Orientação clara para você <br>
@@ -138,7 +156,7 @@
 
                     <!-- Botão de Ação Destacado -->
                     <div class="about-action">
-                        <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20meu%20caso." target="_blank" class="btn-about">
+                        <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20meu%20caso." target="_blank" rel="noopener noreferrer" class="btn-about">
                             Fale com o Dr. Eduardo <span>↗</span>
                         </a>
                     </div>
@@ -147,7 +165,7 @@
                 <!-- Coluna da Foto -->
                 <div class="about-left">
                     <div class="about-image-wrapper">
-                        <img src="./assets/Eduardo-Ramos.jpg" alt="Dr. Eduardo Ramos" class="about-photo">
+                        <img src="./assets/Eduardo-Ramos.jpg" alt="Dr. Eduardo Ramos" class="about-photo" loading="lazy">
                         
                         <div class="about-badge-tag">Atuação desde 2023</div>
 
@@ -170,7 +188,7 @@
                 
                 <!-- Cabeçalho da Seção -->
                 <div class="services-header">
-                    <span class="services-subtitle">03 / ENTENDA SUA SITUAÇÃO</span>
+                    <span class="services-subtitle">02 / ENTENDA SUA SITUAÇÃO</span>
                     <h2 class="services-title">
                         Alguma dessas situações <br>
                         <em>aconteceu com você?</em>
@@ -195,7 +213,7 @@
                             <h3>Fui demitido e não recebi tudo</h3>
                             <p>Verbas rescisórias e outros valores dependem do tipo de desligamento e do que foi pago.</p>
                         </div>
-                        <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20fui%20demitido%20e%20n%C3%A3o%20recebi%20tudo%20e%20quero%20entender%20melhor." target="_blank" class="card-link">Quero entender melhor <span>→</span></a>
+                        <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20fui%20demitido%20e%20n%C3%A3o%20recebi%20tudo%20e%20quero%20entender%20melhor." target="_blank" rel="noopener noreferrer" class="card-link">Quero entender melhor <span>→</span></a>
                     </div>
 
                     <!-- Card 2 (Azul Escuro) -->
@@ -210,7 +228,7 @@
                             <h3>Trabalhei sem carteira assinada</h3>
                             <p>O vínculo de trabalho pode ser analisado mesmo quando não houve registro formal.</p>
                         </div>
-                        <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20trabalhei%20sem%20carteira%20assinada%20e%20quero%20entender%20melhor." target="_blank" class="card-link light-link">Quero entender melhor <span>→</span></a>
+                        <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20trabalhei%20sem%20carteira%20assinada%20e%20quero%20entender%20melhor." target="_blank" rel="noopener noreferrer" class="card-link light-link">Quero entender melhor <span>→</span></a>
                     </div>
 
                     <!-- Card 3 (Branco) -->
@@ -225,7 +243,7 @@
                             <h3>Fui demitido de forma injusta</h3>
                             <p>Conte como foi a demissão para uma avaliação individual da sua situação.</p>
                         </div>
-                        <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20fui%20demitido%20de%20forma%20injusta%20e%20quero%20entender%20melhor." target="_blank" class="card-link">Quero entender melhor <span>→</span></a>
+                        <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20fui%20demitido%20de%20forma%20injusta%20e%20quero%20entender%20melhor." target="_blank" rel="noopener noreferrer" class="card-link">Quero entender melhor <span>→</span></a>
                     </div>
 
                     <!-- Card 4 (Azul Escuro) -->
@@ -240,7 +258,7 @@
                             <h3>Horas extras não pagas</h3>
                             <p>Jornadas prolongadas além do limite diário ou trabalho em feriados sem a devida compensação.</p>
                         </div>
-                        <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20trabalhei%20horas%20extras%20e%20n%C3%A3o%20recebi%20corretamente." target="_blank" class="card-link light-link">Quero entender melhor <span>→</span></a>
+                        <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20trabalhei%20horas%20extras%20e%20n%C3%A3o%20recebi%20corretamente." target="_blank" rel="noopener noreferrer" class="card-link light-link">Quero entender melhor <span>→</span></a>
                     </div>
 
                     <!-- Card 5 (Branco) -->
@@ -255,7 +273,7 @@
                             <h3>FGTS atrasado ou não depositado</h3>
                             <p>Ausência ou irregularidade nos depósitos mensais obrigatórios do Fundo de Garantia.</p>
                         </div>
-                        <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20meu%20FGTS%20est%C3%A1%20atrasado%20ou%20n%C3%A3o%20depositado." target="_blank" class="card-link">Quero entender melhor <span>→</span></a>
+                        <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20meu%20FGTS%20est%C3%A1%20atrasado%20ou%20n%C3%A3o%20depositado." target="_blank" rel="noopener noreferrer" class="card-link">Quero entender melhor <span>→</span></a>
                     </div>
 
                     <!-- Card 6 (Azul Escuro) -->
@@ -270,14 +288,14 @@
                             <h3>Insalubridade ou Periculosidade</h3>
                             <p>Exposição a agentes nocivos à saúde ou a riscos severos sem o recebimento do adicional legal.</p>
                         </div>
-                        <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20trabalho%20em%20condi%C3%B5es%20de%20risco%20ou%20insalubridade." target="_blank" class="card-link light-link">Quero entender melhor <span>→</span></a>
+                        <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20trabalho%20em%20condi%C3%B5es%20de%20risco%20ou%20insalubridade." target="_blank" rel="noopener noreferrer" class="card-link light-link">Quero entender melhor <span>→</span></a>
                     </div>
 
                 </div>
             </div>
         </section>
 
-      <!-- ========================================== -->
+        <!-- ========================================== -->
         <!-- 5. COMO FUNCIONA - 4 Passos Alternados -->
         <!-- ========================================== -->
         <section id="como-funciona" class="steps-section">
@@ -285,7 +303,7 @@
                 
                 <!-- Cabeçalho da Seção -->
                 <div class="steps-header">
-                    <span class="steps-subtitle">04 / SIMPLES E DIRETO</span>
+                    <span class="steps-subtitle">03 / SIMPLES E DIRETO</span>
                     <h2 class="steps-title">
                         Como funciona <em>a avaliação?</em>
                     </h2>
@@ -349,7 +367,7 @@
                 
                 <!-- Cabeçalho da Seção -->
                 <div class="docs-header">
-                    <span class="docs-subtitle">05 / PREPARAÇÃO</span>
+                    <span class="docs-subtitle">04 / PREPARAÇÃO</span>
                     <h2 class="docs-title">
                         O que ajuda na <em>análise do seu caso?</em>
                     </h2>
@@ -419,7 +437,7 @@
 
                 <!-- Botão de Ação Direta -->
                 <div class="docs-action">
-                    <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20tenho%20alguns%20documentos%20e%20gostaria%20de%20uma%20an%C3%A1lise%20do%20meu%20caso." target="_blank" class="btn-docs">
+                    <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20tenho%20alguns%20documentos%20e%20gostaria%20de%20uma%20an%C3%A1lise%20do%20meu%20caso." target="_blank" rel="noopener noreferrer" class="btn-docs">
                         Enviar documentos pelo WhatsApp <span>↗</span>
                     </a>
                 </div>
@@ -434,7 +452,7 @@
             <div class="faq-container">
                 
                 <div class="faq-header">
-                    <span class="faq-subtitle">06 / TIRE SUAS DÚVIDAS</span>
+                    <span class="faq-subtitle">05 / TIRE SUAS DÚVIDAS</span>
                     <h2 class="faq-title">
                         Perguntas <em>frequentes</em>
                     </h2>
@@ -447,7 +465,7 @@
                     
                     <!-- Pergunta 1 -->
                     <div class="faq-item">
-                        <button class="faq-question">
+                        <button type="button" class="faq-question" aria-expanded="false">
                             <span>Como funciona o primeiro contato?</span>
                             <span class="faq-icon">+</span>
                         </button>
@@ -458,7 +476,7 @@
 
                     <!-- Pergunta 2 -->
                     <div class="faq-item">
-                        <button class="faq-question">
+                        <button type="button" class="faq-question" aria-expanded="false">
                             <span>Preciso pagar alguma coisa para fazer a avaliação?</span>
                             <span class="faq-icon">+</span>
                         </button>
@@ -469,7 +487,7 @@
 
                     <!-- Pergunta 3 -->
                     <div class="faq-item">
-                        <button class="faq-question">
+                        <button type="button" class="faq-question" aria-expanded="false">
                             <span>Trabalhei sem carteira assinada, posso reclamar meus direitos?</span>
                             <span class="faq-icon">+</span>
                         </button>
@@ -480,7 +498,7 @@
 
                     <!-- Pergunta 4 -->
                     <div class="faq-item">
-                        <button class="faq-question">
+                        <button type="button" class="faq-question" aria-expanded="false">
                             <span>O atendimento é totalmente online?</span>
                             <span class="faq-icon">+</span>
                         </button>
@@ -502,7 +520,7 @@
                 
                 <!-- Lado Esquerdo: Textos e Informações de Contato -->
                 <div class="contact-info-side">
-                    <span class="contact-subtitle">07 / PRÓXIMO PASSO</span>
+                    <span class="contact-subtitle">06 / PRÓXIMO PASSO</span>
                     <h2 class="contact-title">
                         Vamos entender <br>
                         o que aconteceu <em>com você.</em>
@@ -542,7 +560,7 @@
 
                             <div class="form-group">
                                 <label for="whatsapp">WhatsApp para retorno *</label>
-                                <input type="text" id="whatsapp" placeholder="(82) 9 0000-0000" required>
+                                <input type="tel" id="whatsapp" placeholder="(82) 9 0000-0000" inputmode="tel" autocomplete="tel" required>
                             </div>
 
                             <div class="form-group">
@@ -597,7 +615,7 @@
                     </div>
 
                     <div class="footer-top-link">
-                        <a href="#header">Voltar ao topo ↑</a>
+                        <a href="#hero">Voltar ao topo ↑</a>
                     </div>
                 </div>
 
@@ -610,7 +628,7 @@
     </main>
 
     <!-- Botão Flutuante do WhatsApp com Mensagem Automática -->
-    <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20meu%20caso." target="_blank" class="whatsapp-float" aria-label="Falar no WhatsApp">
+    <a href="https://wa.me/558287292456?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20meu%20caso." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Falar no WhatsApp">
         <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
         </svg>
@@ -618,7 +636,33 @@
 
     <!-- SCRIPTS DE INTERATIVIDADE -->
     <script>
+        // Número do advogado em um só lugar (usado pelo formulário)
+        const NUMERO_WHATSAPP = "558287292456";
+
         document.addEventListener("DOMContentLoaded", () => {
+            // 0. Menu hambúrguer (celular e tablet)
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.getElementById('menu-principal');
+
+            if (menuToggle && navMenu) {
+                const fecharMenu = () => {
+                    navMenu.classList.remove('aberto');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    menuToggle.setAttribute('aria-label', 'Abrir menu');
+                };
+
+                menuToggle.addEventListener('click', () => {
+                    const abrir = !navMenu.classList.contains('aberto');
+                    navMenu.classList.toggle('aberto', abrir);
+                    menuToggle.setAttribute('aria-expanded', String(abrir));
+                    menuToggle.setAttribute('aria-label', abrir ? 'Fechar menu' : 'Abrir menu');
+                });
+
+                // Fecha ao escolher um link ou apertar Esc
+                navMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', fecharMenu));
+                document.addEventListener('keydown', (e) => { if (e.key === 'Escape') fecharMenu(); });
+            }
+
             // 1. Lógica do Acordeão do FAQ
             const faqItems = document.querySelectorAll('.faq-item');
 
@@ -636,29 +680,39 @@
                         item.classList.add('active');
                         icon.textContent = '×';
                     }
+
+                    questionButton.setAttribute('aria-expanded', String(!isOpen));
                 });
             });
 
-            // 2. Lógica de Envio do Formulário para o WhatsApp (Corrigida)
+            // 2. Lógica de Envio do Formulário para o WhatsApp
             const whatsappForm = document.getElementById('whatsappForm');
             if (whatsappForm) {
                 whatsappForm.addEventListener('submit', function(event) {
                     event.preventDefault();
 
-                    const nome = document.getElementById('nome').value;
-                    const whatsapp = document.getElementById('whatsapp').value;
+                    const nome = document.getElementById('nome').value.trim();
+                    const campoWhatsapp = document.getElementById('whatsapp');
+                    const whatsapp = campoWhatsapp.value.trim();
                     const situacaoSelect = document.getElementById('situacao');
                     const situacao = situacaoSelect.value ? situacaoSelect.value : "Não especificada";
-                    const mensagem = document.getElementById('mensagem').value;
+                    const mensagem = document.getElementById('mensagem').value.trim();
 
-                    const numeroCliente = "558287292456"; 
+                    // Validação simples: DDD + número (10 ou 11 dígitos)
+                    const digitos = whatsapp.replace(/\D/g, '');
+                    if (digitos.length < 10 || digitos.length > 13) {
+                        campoWhatsapp.setCustomValidity('Digite um número válido com DDD.');
+                        campoWhatsapp.reportValidity();
+                        campoWhatsapp.addEventListener('input', () => campoWhatsapp.setCustomValidity(''), { once: true });
+                        return;
+                    }
 
                     const texto = `Olá, meu nome é *${nome}*.\nMeu WhatsApp: ${whatsapp}\n\n*Situação:* ${situacao}\n*Resumo do caso:* ${mensagem || "Nenhum detalhe adicional."}`;
 
-                    const mensagemCodificada = encodeURIComponent(texto);
-                    const urlWhatsApp = `https://wa.me/${numeroCliente}?text=${mensagemCodificada}`;
-                    
-                    window.open(urlWhatsApp, '_blank');
+                    const urlWhatsApp = `https://wa.me/${NUMERO_WHATSAPP}?text=${encodeURIComponent(texto)}`;
+
+                    // Mais confiável no celular do que window.open (não é bloqueado como pop-up)
+                    window.location.href = urlWhatsApp;
                 });
             }
         });

@@ -166,6 +166,26 @@
     box-shadow: 0 6px 16px rgba(72, 168, 120, 0.25);
 }
 
+/* ===== TABLETS EM PAISAGEM / NOTEBOOKS PEQUENOS ===== */
+@media (max-width: 1100px) and (min-width: 901px) {
+    .about-container {
+        gap: 40px;
+    }
+
+    .about-image-wrapper {
+        width: 320px;
+        height: 360px;
+    }
+
+    .about-title {
+        font-size: 34px;
+    }
+
+    .about-info-grid {
+        gap: 14px;
+    }
+}
+
 /* ===== RESPONSIVIDADE PARA CELULAR ===== */
 @media (max-width: 900px) {
     .about-section {

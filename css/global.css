@@ -1,5 +1,4 @@
-/* Importação oficial da fonte Inter do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+/* A fonte Inter agora é carregada pelo <link> no index.html (mais rápido que @import) */
 
 :root {
     --font-primary: 'Inter', sans-serif;
@@ -13,6 +12,30 @@
 
 html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* O header é sticky: compensa a altura dele ao navegar pelas âncoras */
+section[id] {
+    scroll-margin-top: 70px;
+}
+
+/* Botões e campos herdam a fonte Inter (por padrão usam a fonte do sistema) */
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+/* Foco visível para quem navega pelo teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #48a878;
+    outline-offset: 3px;
 }
 
 body {
@@ -61,4 +84,29 @@ body {
 
 .whatsapp-float {
     animation: pulse-whatsapp 2s infinite;
+}
+
+/* Celular: botão do WhatsApp menor e sem cobrir o conteúdo */
+@media (max-width: 600px) {
+    .whatsapp-float {
+        bottom: 16px;
+        right: 16px;
+        width: 54px;
+        height: 54px;
+    }
+}
+
+/* Respeita quem prefere menos animação */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .whatsapp-float {
+        animation: none;
+    }
+
+    * {
+        transition-duration: 0.01ms !important;
+    }
 }

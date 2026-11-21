@@ -236,8 +236,27 @@
         height: 240px; /* Redimensiona o círculo proporcionalmente para celulares */
     }
 
+    .hero-badge {
+        font-size: 10px;
+        border-radius: 16px;
+        text-align: center;
+        line-height: 1.4;
+    }
+
     .bottom-bar-container {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+/* Celulares bem pequenos */
+@media (max-width: 380px) {
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-image-wrapper {
+        width: 200px;
+        height: 200px;
     }
 }

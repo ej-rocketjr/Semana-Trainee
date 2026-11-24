@@ -12,12 +12,13 @@ Este projeto consiste no desenvolvimento de uma Landing Page institucional volta
 
 ## 👥 Equipe
 
-- [João Victor] – [Função]
-- [Armando Gabriel] – [Função]
-- [Alana Santos] – [Função]
-- [Kaio Texeira] - [Função]
-- [Victor Santos] - [Função]
+## 👥 Equipe
 
+- João Victor –  Documentação, versionamento e deploy (README, commits e Pull Request)
+- Armando Gabriel – Líder do projeto e contato com o cliente (levantamento e validação de requisitos)
+- Alana Santos – Design e prototipação (Figma e identidade visual)
+- Kaio Texeira – Desenvolvimento JavaScript (formulário, FAQ e integração com WhatsApp)
+- Victor Santos – Desenvolvimento front-end (estrutura HTML e estilização CSS)
 ---
 
 ## 🎯 Cliente

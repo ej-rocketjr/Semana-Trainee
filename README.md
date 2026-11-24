@@ -71,6 +71,18 @@ Este projeto seguiu as diretrizes da Diretoria de Projetos da RocketJR:
 
 ```
 /
-├── Demonstração HTML offline.html
+├── index.html
+├── assets/
+│   └── Eduardo-Ramos.jpg
+├── css/
+│   ├── global.css
+│   ├── header.css
+│   ├── hero.css
+│   ├── sobre.css
+│   ├── servicos.css
+│   ├── como-funciona.css
+│   ├── duvidas.css
+│   ├── documentos.css
+│   └── contato.css
 └── README.md
 ```

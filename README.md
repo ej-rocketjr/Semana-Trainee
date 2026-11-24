@@ -58,7 +58,7 @@ Este projeto consiste no desenvolvimento de uma Landing Page institucional volta
 Este projeto seguiu as diretrizes da Diretoria de Projetos da RocketJR:
 
 - Repositório criado a partir de fork do repositório base (`ej-rocketjr/Semana-Trainee`);
-- Desenvolvimento realizado exclusivamente na branch `feature/pagina-advogado`;
+- Desenvolvimento realizado exclusivamente neste fork;
 - Uso de commits frequentes e padronizados (Conventional Commits);
 - Pull Request aberto ao final da atividade para revisão e Code Review.
 

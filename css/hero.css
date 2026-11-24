@@ -127,6 +127,13 @@
     justify-content: center;
 }
 
+.hero-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .hero-image-wrapper {
     width: 360px;
     height: 360px;
@@ -144,6 +151,40 @@
        e o segundo valor (top) mantém o foco vertical no topo */
     object-position: 52% top; 
     border-radius: 50%;
+}
+
+.hero-identification {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 22px;
+}
+
+.hero-identification-name,
+.hero-identification-role {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: min(100%, 390px);
+    min-height: 66px;
+    padding: 12px 24px;
+    border: 3px solid #20c7a5;
+    border-radius: 999px;
+    background-color: #0751a3;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: center;
+}
+
+.hero-identification-name {
+    font-size: 26px;
+}
+
+.hero-identification-role {
+    font-size: 22px;
 }
 
 /* Faixa Inferior (Sub-hero) */
@@ -236,6 +277,21 @@
         height: 240px; /* Redimensiona o círculo proporcionalmente para celulares */
     }
 
+    .hero-identification {
+        margin-top: 18px;
+        gap: 8px;
+    }
+
+    .hero-identification-name {
+        min-height: 58px;
+        font-size: 21px;
+    }
+
+    .hero-identification-role {
+        min-height: 54px;
+        font-size: 17px;
+    }
+
     .hero-badge {
         font-size: 10px;
         border-radius: 16px;
@@ -258,5 +314,18 @@
     .hero-image-wrapper {
         width: 200px;
         height: 200px;
+    }
+
+    .hero-identification-name,
+    .hero-identification-role {
+        padding: 9px 16px;
+    }
+
+    .hero-identification-name {
+        font-size: 18px;
+    }
+
+    .hero-identification-role {
+        font-size: 15px;
     }
 }

@@ -43,7 +43,7 @@ Este projeto consiste no desenvolvimento de uma Landing Page institucional volta
 ## 🎨 Prototipação
 
 - **Ferramenta utilizada:** Figma
-- **Link do protótipo:** [INSERIR LINK DO FIGMA]
+- **Link do protótipo:** https://www.figma.com/design/29dxPp05K3rNf8hBOMYWqv/Sem-t%C3%ADtulo?node-id=1-3&m=dev
 - **Status:** Aprovado pelo cliente
 
 ## 🛠️ Tecnologias Utilizadas

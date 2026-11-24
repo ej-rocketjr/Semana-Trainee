@@ -65,7 +65,7 @@ Este projeto seguiu as diretrizes da Diretoria de Projetos da RocketJR:
 ## 🌐 Deploy
 
 - **Plataforma de deploy:** Vercel
-- **Link do deploy:** [https://eduardoramos-adv.vercel.app/]
+- **Link do deploy:** https://eduardoramos-adv.vercel.app/
 
 ## 📂 Estrutura do Projeto
 

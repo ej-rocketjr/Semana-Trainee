@@ -12,7 +12,8 @@ Este projeto consiste no desenvolvimento de uma Landing Page institucional volta
 - Armando Gabriel – Líder do projeto e contato com o cliente (levantamento e validação de requisitos)
 - Alana Santos – Design e prototipação (Figma e identidade visual)
 - Kaio Texeira – Desenvolvimento JavaScript (formulário, FAQ e integração com WhatsApp)
-- Victor Santos – Desenvolvimento front-end (estrutura HTML e estilização CSS) 
+- Victor Santos – Desenvolvimento front-end (estrutura HTML e estilização CSS)
+- André Farias - Contato e Rodapé (contato.css) — Branch: feature/contato
 
 ## 🎯 Cliente
 
